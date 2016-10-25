@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LojaVirtual.Dominio.Repositorio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +9,15 @@ namespace LojaVirtual.Web.Controllers
 {
     public class ProdutoController : Controller
     {
+        private ProdutoRepositorio _produtoRepositorio;
+
         // GET: Produto
         public ActionResult Index()
         {
-            return View();
+            _produtoRepositorio = new ProdutoRepositorio();
+            var produtos = _produtoRepositorio.produtos;
+
+            return View(produtos);
         }
     }
 }
