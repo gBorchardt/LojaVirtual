@@ -10,7 +10,7 @@ namespace LojaVirtual.Dominio.Entidades
     {
         public int CategoriaID { get; set; }
         public string Descricao { get; set; }
-        public string CodigoExterno { get; set; }
+        public string CodExterno { get; set; }
         public DateTime DataCadastro { get; set; }
     }
 }

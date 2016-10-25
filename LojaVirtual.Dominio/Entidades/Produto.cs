@@ -12,7 +12,7 @@ namespace LojaVirtual.Dominio.Entidades
         public string Nome { get; set; }
         public string Descricao { get; set; }
         public decimal Preco { get; set; }
-        public int CategoriaID { get; set; }
         public DateTime DataCadastro { get; set; }
+        public int CategoriaID { get; set; }
     }
 }
