@@ -9,8 +9,8 @@ namespace LojaVirtual.Dominio.Repositorio
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-            modelBuilder.Entity<Categoria>().ToTable("Categorias");
-            modelBuilder.Entity<Produto>().ToTable("Produtos");
+            //modelBuilder.Entity<Categoria>().ToTable("Categoria");
+            //modelBuilder.Entity<Produto>().ToTable("Produto");
         }
 
         public DbSet<Categoria> Categorias{ get; set; }

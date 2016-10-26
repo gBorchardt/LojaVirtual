@@ -1,5 +1,6 @@
 ﻿using LojaVirtual.Dominio.Entidades;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LojaVirtual.Dominio.Repositorio
 {
