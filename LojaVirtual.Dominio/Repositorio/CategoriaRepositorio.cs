@@ -3,13 +3,13 @@ using System.Collections.Generic;
 
 namespace LojaVirtual.Dominio.Repositorio
 {
-    public class ProdutoRepositorio
+    public class CategoriaRepositorio
     {
         private readonly EfDbContext _context = new EfDbContext();
 
-        public IEnumerable<Produto> produtos
+        public IEnumerable<Categoria> categorias
         {
-            get { return _context.Produtos; }
+            get { return _context.Categorias; }
         }
     }
 }
