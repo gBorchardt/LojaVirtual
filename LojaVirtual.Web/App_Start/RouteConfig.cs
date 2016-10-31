@@ -16,7 +16,7 @@ namespace LojaVirtual.Web
             routes.MapRoute(
                 name: null,
                 url: "Pagina{pagina}",
-                defaults: new { controller = "Vitrine", action = "ListaProdutos"}
+                defaults: new { controller = "Vitrine", action = "ListaProdutos" }
             );
 
             routes.MapRoute(
