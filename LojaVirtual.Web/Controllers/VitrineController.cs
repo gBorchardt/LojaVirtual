@@ -1,4 +1,5 @@
 ﻿using LojaVirtual.Dominio.Repositorio;
+using LojaVirtual.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,13 +15,33 @@ namespace LojaVirtual.Web.Controllers
 
         public ActionResult ListaProdutos(int pagina = 1)
         {
-            _produtoRepositorio = new ProdutoRepositorio();
-            var produtos = _produtoRepositorio.produtos
-                .OrderBy(p => p.Nome)
-                .Skip((pagina - 1 ) * qtdProdutosPorPagina)
-                .Take(qtdProdutosPorPagina);
+            //_produtoRepositorio = new ProdutoRepositorio();
+            //var produtos = _produtoRepositorio.produtos
+            //    .OrderBy(p => p.Nome)
+            //    .Skip((pagina - 1 ) * qtdProdutosPorPagina)
+            //    .Take(qtdProdutosPorPagina);
 
-            return View(produtos);
+            //return View(produtos);
+
+            _produtoRepositorio = new ProdutoRepositorio();
+
+            ProdutosViewModel model = new Models.ProdutosViewModel
+            {
+
+                Produtos = _produtoRepositorio.produtos
+                    .OrderBy(p => p.Nome)
+                    .Skip((pagina - 1) * qtdProdutosPorPagina)
+                    .Take(qtdProdutosPorPagina),
+
+                Paginacao = new Paginacao
+                {
+                    PaginaAtual = pagina,
+                    QtdProdutosPorPagina = qtdProdutosPorPagina,
+                    QtdProdutosTotal = _produtoRepositorio.produtos.Count()
+                }
+            };
+
+            return View(model);
         }
     }
 }

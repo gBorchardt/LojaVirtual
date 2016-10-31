@@ -9,7 +9,7 @@ namespace LojaVirtual.UnitTest
     [TestClass]
     public class UnitTestLoja
     {
-        //Testando com AAA (Arragen, Act, Assert
+        //Testando com AAA (Arrange, Act, Assert)
 
         //Arrange
         //Todo teste passa por uma preparação, seja de ambiente, variáveis, banco de dados, etc. 

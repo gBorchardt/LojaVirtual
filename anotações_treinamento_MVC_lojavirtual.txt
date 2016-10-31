@@ -1,0 +1,27 @@
+LojaVirtual.Dominio - Class Library
+
+LojaVirtual.Web - ASP.NET MVC 5
+
+LojaVirtual.UnitTest
+
+GitHub - https://github.com/gBorchardt/LojaVirtual.git
+
+LocalDB - Versão simplificada do SQL Server
+
+LojaVirtual.Dominio - Entidades - Criação das classes (produto,categoria)
+
+LocalDB
+
+Install-Package Entity-Framework
+
+UnitTest
+//Testando com AAA (Arrange, Act, Assert)
+
+//Arrange
+//Todo teste passa por uma preparação, seja de ambiente, variáveis, banco de dados, etc. 
+
+//Act
+//Todo teste passa por um momento onde estimulamos o sistema sendo testado (Systen Under Test - SUT).
+
+//Assert
+//Em seguida, verificamos se os resultados obtidos batem com os resultados esperados.
