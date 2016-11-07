@@ -25,3 +25,9 @@ UnitTest
 
 //Assert
 //Em seguida, verificamos se os resultados obtidos batem com os resultados esperados.
+
+
+
+Verificar
+Marca/Cor/Tamanho
+"Tênis nike de corrida vermelho"
