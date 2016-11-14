@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LojaVirtual.Dominio.Repositorio
 {
-    class CarrinhoRepositorio
+    public class CarrinhoRepositorio
     {
         private readonly List<Carrinho> _carrinho = new List<Carrinho>();
         

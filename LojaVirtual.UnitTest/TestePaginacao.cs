@@ -7,7 +7,7 @@ using LojaVirtual.Web.HtmlHelpers;
 namespace LojaVirtual.UnitTest
 {
     [TestClass]
-    public class UnitTestLoja
+    public class TestePaginacao
     {
         //Testando com AAA (Arrange, Act, Assert)
 
